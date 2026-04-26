@@ -1,116 +1,79 @@
 .contact-section {
-  margin: auto;
-  padding-bottom: 100px;
-  margin-top: 100px;
+  background-color: #111111;
+  color: #ffffff;
+  padding: 120px 0 40px 0;
+  width: 100vw;
   position: relative;
-  z-index: 2;
-  background-color: var(--backgroundColor);
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
 }
 
-.contact-section h3 {
-  font-size: 60px;
+.dean-footer-title {
+  font-size: clamp(40px, 6vw, 80px);
+  font-weight: 500;
+  line-height: 1.1;
+  letter-spacing: -2px;
+  margin-bottom: 60px;
+  max-width: 800px;
+  color: #ffffff;
+}
+
+.dean-footer-email {
+  display: inline-block;
+  font-size: clamp(24px, 4vw, 40px);
   font-weight: 400;
-  text-transform: uppercase;
-  margin: 0;
+  color: #ffffff;
+  text-decoration: underline;
+  text-underline-offset: 8px;
+  margin-bottom: 120px;
+  transition: opacity 0.3s ease;
 }
 
-.contact-flex {
+.dean-footer-email:hover {
+  opacity: 0.8;
+}
+
+.contact-flex-dean {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  padding-top: 40px;
+  border-top: 1px solid #333333;
 }
 
-.contact-flex h4 {
-  font-weight: 500;
-  margin: 0;
-  opacity: 0.6;
-}
-
-.contact-box {
+.socials-dean {
   display: flex;
-  flex-direction: column;
+  gap: 24px;
+  flex-wrap: wrap;
 }
 
-.contact-flex p {
-  margin-top: 10px;
-  margin-bottom: 20px;
-}
-
-a.contact-social {
-  font-size: 25px;
-  border-bottom: 1px solid #ccc;
-}
-
-.contact-box h2 {
-  font-weight: 400;
-  font-size: 23px;
-  margin: 0;
-}
-
-.contact-box h2>span {
-  color: var(--accentColor);
-}
-
-.contact-box h5 {
-  font-size: 20px;
-  font-weight: 500;
-  line-height: 20px;
+.contact-social {
+  color: #999999;
   display: flex;
-  gap: 10px;
-  opacity: 0.5;
+  align-items: center;
+  gap: 4px;
+  font-size: 16px;
+  transition: color 0.3s;
 }
 
-@media only screen and (max-width: 1600px) {
-  .contact-section h3 {
-    font-size: 50px;
-  }
-
-  .contact-box h2 {
-    font-size: 20px;
-  }
-
-  a.contact-social {
-    font-size: 22px;
-  }
+.contact-social:hover {
+  color: #ffffff;
 }
 
-@media only screen and (max-width: 1300px) {
-  .contact-section h3 {
-    font-size: 40px;
-  }
-
-  .contact-box h2 {
-    font-size: 18px;
-  }
-
-  a.contact-social {
-    font-size: 20px;
-  }
-
-  .contact-flex p {
-    margin-top: 0px;
-  }
+.copyright-dean {
+  color: #666666;
+  font-size: 14px;
 }
 
-@media only screen and (max-width: 900px) {
-  .contact-flex {
-    flex-direction: column;
-    gap: 40px;
-  }
-
-  .contact-flex p {
-    margin-bottom: 0px;
-  }
-
-  .contact-flex h4 {
-    margin-top: 20px;
-  }
-
+@media screen and (max-width: 768px) {
   .contact-section {
-    margin-top: 50px;
-    padding-bottom: 50px;
+    padding: 80px 0 30px 0;
   }
-
-  .contact-container {
-    width: calc(100% - 25px);
+  .dean-footer-email {
+    margin-bottom: 80px;
   }
 }

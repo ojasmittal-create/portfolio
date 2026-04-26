@@ -1,71 +1,56 @@
 .about-section {
-  display: flex;
-  align-items: center;
-  justify-content: left;
-  place-items: center;
-  position: relative;
-  opacity: 1;
-  height: auto;
-  width: var(--cWidth);
-  margin: auto;
+  padding: 100px 0;
+  border-top: 1px solid var(--border-color, #e5e5e5);
+  margin-top: 100px;
 }
-.about-me {
-  padding: 50px 0px;
-  padding-bottom: 0;
-  width: 500px;
-  max-width: calc(100% - 15px);
-}
-.about-me h3 {
-  font-size: 25px;
-  text-transform: uppercase;
-  letter-spacing: 7px;
+
+.dean-about-para {
+  font-size: clamp(24px, 4vw, 40px);
+  line-height: 1.4;
+  color: #111111;
+  max-width: 1000px;
+  margin-bottom: 80px;
   font-weight: 400;
-  color: var(--accentColor);
+  letter-spacing: -1px;
 }
 
-.about-me p {
-  font-size: 33px;
-  font-weight: 600;
-  line-height: 36px;
-  letter-spacing: 1px;
+.about-grid-dean {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 80px;
 }
 
-@media only screen and (min-width: 600px) {
-  .about-section {
-    justify-content: center;
-  }
+.about-col-title {
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 40px;
+  color: #111111;
 }
-@media only screen and (min-width: 768px) {
-  .about-me {
-    width: 500px;
-    max-width: calc(100% - 70px);
-    transform: translateY(0%);
-  }
-  .about-section {
-    opacity: 1;
-  }
+
+.about-stat-row {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 24px;
+  border-bottom: 1px solid var(--border-color, #e5e5e5);
+  margin-bottom: 24px;
+  font-size: 16px;
+  color: #666666;
 }
-@media only screen and (min-width: 1025px) {
-  .about-section {
-    width: var(--cWidth);
-    justify-content: right;
-    max-width: 1920px;
-    height: var(--vh);
-    padding: 0px;
-    opacity: 1;
-  }
-  .about-me {
-    padding: 0px;
-    width: 50%;
-  }
-  .about-me p {
-    font-size: 1.9vw;
-    line-height: 2.3vw;
-  }
+
+.about-stat-row strong {
+  color: #111111;
+  font-weight: 500;
 }
-@media only screen and (min-width: 1950px) {
-  .about-me p {
-    font-size: 2.5rem;
-    line-height: 2.7rem;
+
+.about-tools-text {
+  color: #111111;
+  text-align: right;
+  max-width: 60%;
+}
+
+@media screen and (max-width: 768px) {
+  .about-grid-dean {
+    grid-template-columns: 1fr;
+    gap: 60px;
   }
 }

@@ -5,25 +5,26 @@ const Landing = ({ children }: PropsWithChildren) => {
   return (
     <>
       <div className="landing-section" id="landingDiv">
-        <div className="landing-container">
-          <div className="landing-intro">
-            <h2>Hello! I'm</h2>
-            <h1>
-              OJAS
-              <br />
-              <span>MITTAL</span>
-            </h1>
+        <div className="marquee-container">
+          <div className="marquee">
+            <span>. . . . . . . . . . Projects</span>
+            <span>. . . . . . . . . . Services</span>
+            <span>. . . . . . . . . . Contact</span>
+            <span>. . . . . . . . . . Projects</span>
+            <span>. . . . . . . . . . Services</span>
+            <span>. . . . . . . . . . Contact</span>
           </div>
-          <div className="landing-info">
-            <h3>A UI/UX</h3>
-            <h2 className="landing-info-h2">
-              <div className="landing-h2-1">Designer</div>
-              <div className="landing-h2-2">Creative</div>
-            </h2>
-            <h2>
-              <div className="landing-h2-info">Creative</div>
-              <div className="landing-h2-info-1">Designer</div>
-            </h2>
+        </div>
+
+        <div className="huge-bg-text">
+          UX/UI DESIGNER
+        </div>
+
+        <div className="landing-container">
+          <div className="dean-intro-box">
+            <h2>Hi, I'm Ojas</h2>
+            <p>From India, I design intuitive, user-friendly interfaces for founders and startups looking to attract dream clients.</p>
+            <a href="#contact" className="chat-btn">I Want to Chat</a>
           </div>
         </div>
         {children}
